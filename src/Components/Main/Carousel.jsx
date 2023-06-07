@@ -22,9 +22,9 @@ const Carousel = () => {
   const options = {perPage: 1, arrows: false, pagination: true, width:340, rewind: false , type:'loop' , autoplay:true}
 
   return (
-    <div className='w-full flex md:flex-row flex-col my-8 items-center justify-center gap-12 font-semibold'>
+    <div className='md:w-full flex md:flex-row flex-col my-8 items-center justify-center gap-12 font-semibold'>
         
-        <div className='w-[60%] flex flex-col  leading-10'>
+        <div className='md:w-[60%] w-screen px-8 md:px-0 flex'>
             <h1 className='md:text-8xl tracking-wide text-6xl text-[#7367EF]'>Embark on an Epic ShowQuest!
             </h1>
 
