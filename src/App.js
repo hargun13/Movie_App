@@ -1,25 +1,31 @@
-import logo from './logo.svg';
 import './App.css';
+import Home from './Home.jsx';
+import Summary from './Components/Main/Summary';
+import { Routes , Route, BrowserRouter } from 'react-router-dom';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+  
+ 
+        <Routes>
+
+          <Route path='/' element={<Home />} />
+          <Route path='/summary' element={<Summary />} />
+        
+        </Routes>
+
+
+     
+ 
   );
 }
 
 export default App;
+
+
+
+// background color: #212329
+// accent color(Reddish): #D12229
+// accent color(Purplish): #7367EF
+// graph color(green): #2CC872
+// text color: #656672
