@@ -1,6 +1,5 @@
 import React, { useState, useEffect, useParams } from 'react';
 import Sum_Navbar from './Sum_Navbar';
-import Booking from './Booking';
 
 
 //Data wasn't being passed from RestMovies <- Need to fix it, the array of data passed was null

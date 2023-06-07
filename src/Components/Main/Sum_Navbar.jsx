@@ -1,6 +1,6 @@
 import React,{useState} from 'react';
 import {AiOutlineClose , AiOutlineMenu , AiOutlineArrowRight} from 'react-icons/ai';
-
+import { Link } from 'react-router-dom';
 
 
 function Sum_Navbar() {
@@ -17,7 +17,13 @@ function Sum_Navbar() {
 
         <a href='/' className='text-4xl '>ShowQuest</a>
         <ul className='hidden md:flex mx-5'>
-            <li className='p-1 px-3 text-3xl transtion duration-300  hover:rounded-xl cursor-pointer  group'><span className='group-hover:text-[#f89ecc] flex items-center justify-center gap-2' >Book Now <AiOutlineArrowRight className='transition duration-300 group-hover:translate-x-3' /></span></li>
+            <Link to="/book"><li className='p-1 px-3 text-3xl transtion duration-300  hover:rounded-xl cursor-pointer  group'>
+                <span className='group-hover:text-[#f89ecc] flex items-center justify-center gap-2' >
+                    
+                    Book Now <AiOutlineArrowRight className='transition duration-300 group-hover:translate-x-3' />
+                
+                </span>
+            </li></Link>
         </ul>
 
         <div onClick={handleNav} className='block md:hidden'>
